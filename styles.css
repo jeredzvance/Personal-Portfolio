@@ -691,9 +691,9 @@ a{
     margin-left: 5.5%;
     margin-right: 5.5%;
   }
-  .modal > .modal-content > form > .modal-send:hover {
+  .modal > .modal-content > form > .modal-send::after {
     height: 35px;
-    width: 85%;
+    width: 45%;
     border-radius: 8px;
     border-color: rgb(193, 98, 127);
     background-color: rgb(235, 131, 162);

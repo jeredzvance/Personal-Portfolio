@@ -64,20 +64,24 @@ window.onclick = function(event) {
 var contactForm = document.getElementById("contactForm");
 
 contactForm.addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevent the default form submission
+  // event.preventDefault(); // Prevent the default form submission
 
-  // You can now access the form values using contactForm.elements
-  var name = contactForm.elements["name"].value;
-  var email = contactForm.elements["email"].value;
-  var message = contactForm.elements["message"].value;
 
-  // Do something with the form values, like sending them to a server
-  console.log("Name:", name);
-  console.log("Email:", email);
-  console.log("Message:", message);
+  // //access the form values using contactForm.elements
+  // var name = contactForm.elements["name"].value;
+  // var email = contactForm.elements["email"].value;
+  // var message = contactForm.elements["message"].value;
 
-  // Close the modal after submitting the form
-  modal.style.display = "none";
+  // // Do something with the form values, like sending them to a server
+  // console.log("Name:", name);
+  // console.log("Email:", email);
+  // console.log("Message:", message);
+
+  // // Close the modal after submitting the form
+  // modal.style.display = 'none';
+  alert("(˚ ˃̣̣̥⌓˂̣̣̥ ) ‧º Still on Development. Developer is doing her Best! (˚ ˃̣̣̥⌓˂̣̣̥ ) ‧º");
+  //as you can see, i commented my line of codes. kasi konti palang ako sa backend. 
+  // i think, sa server side na ata ito eh. pero soon maybe kaya `alert()` muna ahehe
 })
 
 //for dark mode
@@ -95,3 +99,4 @@ toggle.addEventListener('click', () => {
     document.documentElement.removeAttribute('data-theme');  
   }
 });
+
