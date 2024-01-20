@@ -66,6 +66,17 @@ body {
   transition: background 0.2s ease-out;
 }
 
+body {
+  color: var(--text-color); 
+}
+
+.box {
+  color: var(--text-color);
+}
+
+.download-summary { 
+  color: var(--text-color);
+}
 .toggle-btn {
   border: 0;
   background: var(--bg); 
