@@ -79,3 +79,5 @@ contactForm.addEventListener("submit", function(event) {
   // Close the modal after submitting the form
   modal.style.display = "none";
 })
+
+//flip card
