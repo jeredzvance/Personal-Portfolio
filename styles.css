@@ -690,8 +690,11 @@ a{
     color: white;
     margin-left: 5.5%;
     margin-right: 5.5%;
+
+    transition-duration: 0.4s;
+    cursor: pointer;
   }
-  .modal > .modal-content > form > .modal-send::after {
+  .modal > .modal-content > form > .modal-send:hover {
     height: 35px;
     width: 45%;
     border-radius: 8px;
@@ -701,4 +704,5 @@ a{
     margin-left: 5.5%;
     margin-right: 5.5%;
   }
+
 }
