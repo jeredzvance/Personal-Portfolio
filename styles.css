@@ -616,13 +616,20 @@ a{
   }
   .my-projects,.my-description,.projects-container,.summary-container, .warpper{
     width: 90%;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 15px;
+    margin-right: -5px;
+    justify-content: center;
   }
-  .summary-container{
-    width: 190%;
+  .projects-container{
+    border-color: rgb(235, 131, 162);
+    border-style: solid;
+  }
+  #summaryContainer{
+    width: 95%;
   }
   .tabs{
+    margin: 0 auto;
+    width: 96%;
     text-align: center;
   }
   .panels{
