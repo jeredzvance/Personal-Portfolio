@@ -80,4 +80,17 @@ contactForm.addEventListener("submit", function(event) {
   modal.style.display = "none";
 })
 
-//flip card
+//for dark mode
+
+const toggle = document.querySelector('.toggle-btn');
+
+toggle.addEventListener('click', () => {
+  let isDark = toggle.getAttribute('aria-pressed') === 'true';
+  toggle.setAttribute('aria-pressed', !isDark);
+
+  if (!isDark) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  } else {  
+    document.documentElement.removeAttribute('data-theme');  
+  }
+});
