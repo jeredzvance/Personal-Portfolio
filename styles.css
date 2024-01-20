@@ -12,7 +12,7 @@ body{
   flex-direction: column; /*center horizontally*/
   align-items: center; /*center vertically*/
 
-  min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+  min-height: 150vh; /* Ensure the body takes at least the full viewport height */
 }
 
 /*----------------------------First-Div------------------------------------------------*/
@@ -103,8 +103,8 @@ body {
 
 /*----------------------------Second-Div------------------------------------------------*/
 #toggleButton{
-  height: 35px;
-  width: 15%;
+  height: 34px;
+  width: 65%;
 
   border-radius: 8px;
   border-color: azure;
@@ -115,8 +115,8 @@ body {
   cursor: pointer;
 }
 #toggleButton:hover{
-  height: 35px;
-  width: 15%;
+  height: 34px;
+  width: 85%;
 
   border-radius: 8px;
   border-color: rgb(193, 98, 127);;
@@ -420,19 +420,19 @@ border-top: 3px solid #000;
 }
 /*----------------------------Modal-Div------------------------------------------------*/
 #contactBtn {
-height: 34px;
-width: 15%;
-border-radius: 8px;
-border-color: rgb(193, 98, 127);
-background-color: rgb(235, 131, 162);
-color: azure;
-transition-duration: 0.4s;
+  height: 34px;
+  width: 35%;
+  border-radius: 8px;
+  border-color: rgb(193, 98, 127);
+  background-color: rgb(235, 131, 162);
+  color: azure;
+  transition-duration: 0.4s;
 cursor: pointer;
 }
 
 #contactBtn:hover {
 height: 34px;
-width: 15%;
+width: 65%;
 border-radius: 8px;
 border-color: azure;
 background-color: rgb(235, 131, 162);
@@ -576,8 +576,6 @@ a{
 .my-instagram,
 .my-pinterest,
 .my-cardd {
-  height: 2.5%;
-  width: 2.5%;
   margin-left: 10px;
   margin-right: 10px;
   margin: 0;
@@ -606,10 +604,12 @@ a{
 
 @media (max-width: 960px) {
   img{
-    border-radius: 20px;
+    height: 250px;
+    width: 225px;
+    border-radius: 10%;
   }
   p{
-    font-size: 20px;
+    font-size: 15.5px;
   }
   h1{
     font-size: large;
@@ -627,5 +627,71 @@ a{
   }
   .panels{
     width: 70%;
+  }
+  .my-socials{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  #contactBtn {
+    height: 34px;
+    width: 45%;
+    border-radius: 8px;
+    border-color: rgb(193, 98, 127);
+    background-color: rgb(235, 131, 162);
+    color: azure;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  #contactBtn:hover {
+    height: 34px;
+    width: 85%;
+    border-radius: 8px;
+    border-color: rgb(193, 98, 127);
+    background-color: rgb(235, 131, 162);
+    color: azure;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  #toggleButton{
+    height: 34px;
+    width: 45%;
+  
+    border-radius: 8px;
+    border-color: azure;
+    background-color: rgb(235, 131, 162);
+    color: rgb(118, 49, 70);
+  
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  #toggleButton:hover{
+    height: 34px;
+    width: 85%;
+  
+    border-radius: 8px;
+    border-color: rgb(193, 98, 127);;
+    background-color: rgb(235, 131, 162);
+    color:azure;
+  }
+  .modal > .modal-content > form > .modal-send {
+    height: 35px;
+    width: 45%;
+    border-radius: 8px;
+    border-color: rgb(193, 98, 127);
+    background-color: rgb(235, 131, 162);
+    color: white;
+    margin-left: 5.5%;
+    margin-right: 5.5%;
+  }
+  .modal > .modal-content > form > .modal-send:hover {
+    height: 35px;
+    width: 85%;
+    border-radius: 8px;
+    border-color: rgb(193, 98, 127);
+    background-color: rgb(235, 131, 162);
+    color: white;
+    margin-left: 5.5%;
+    margin-right: 5.5%;
   }
 }

@@ -29,7 +29,7 @@ function toggleSummaryContainer() {
       }
 
       summaryContainer.classList.toggle('show');
-      toggleBtn.style.width = summaryContainer.classList.contains('show') ? '55%' : '15%';
+      toggleBtn.style.width = summaryContainer.classList.contains('show') ? '35%' : '65%';
   });
 }
 
