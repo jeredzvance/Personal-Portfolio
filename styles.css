@@ -385,7 +385,7 @@ border-top: 3px solid #000;
   border-radius: 8px;
   border-color: rgb(193, 98, 127);
   background-color: rgb(235, 131, 162);
-  color: azure;
+  color: rgb(118, 49, 70);
   
   transition-duration: 0.4s;
   cursor: pointer;
@@ -396,7 +396,7 @@ border-top: 3px solid #000;
   border-radius: 8px;
   border-color: azure;
   background-color: rgb(235, 131, 162);
-  color: rgb(118, 49, 70);
+  color: azure;
 }
 
 .linkSee{
@@ -601,4 +601,31 @@ a{
 .my-pinterest img:hover,  
 .my-cardd img:hover {
   transform: scale(1.5);
+}
+/*-----------------------------------------------------------------------*/
+
+@media (max-width: 960px) {
+  img{
+    border-radius: 20px;
+  }
+  p{
+    font-size: 20px;
+  }
+  h1{
+    font-size: large;
+  }
+  .my-projects,.my-description,.projects-container,.summary-container, .warpper{
+    width: 90%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .summary-container{
+    width: 190%;
+  }
+  .tabs{
+    text-align: center;
+  }
+  .panels{
+    width: 70%;
+  }
 }
