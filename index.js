@@ -79,7 +79,7 @@ contactForm.addEventListener("submit", function(event) {
 
   // // Close the modal after submitting the form
   // modal.style.display = 'none';
-  alert("(˚ ˃̣̣̥⌓˂̣̣̥ ) ‧º Still on Development. Developer is doing her Best! (˚ ˃̣̣̥⌓˂̣̣̥ ) ‧º");
+  alert("Still on Development. I'm doing my Best! (˚ ˃̣̣̥⌓˂̣̣̥ ) ‧º");
   //as you can see, i commented my line of codes. kasi konti palang ako sa backend. 
   // i think, sa server side na ata ito eh. pero soon maybe kaya `alert()` muna ahehe
 })
