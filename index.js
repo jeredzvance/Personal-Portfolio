@@ -83,6 +83,7 @@ contactForm.addEventListener("submit", function(event) {
 //for dark mode
 
 const toggle = document.querySelector('.toggle-btn');
+const body = document.body;
 
 toggle.addEventListener('click', () => {
   let isDark = toggle.getAttribute('aria-pressed') === 'true';
