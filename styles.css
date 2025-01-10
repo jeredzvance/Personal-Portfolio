@@ -427,7 +427,9 @@ border-top: 3px solid #000;
   background-color: rgb(235, 131, 162);
   color: azure;
   transition-duration: 0.4s;
-cursor: pointer;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #contactBtn:hover {
@@ -543,102 +545,100 @@ textarea {
   margin-right: 5.5%;
 }
 /*----------------------------Fourth-Div------------------------------------------------*/
-.my-socials{ /* +10 to add space for respective sibling divs*/
-  display: flex;
-  gap: 20;
-  flex-direction: row; /*to display Horizontally*/
-  height: 90%;
-  width: 70%;
-
-
-  border-style: dotted;
-  border-width: 0;
-  border-color: rgb(193, 98, 127);
-  border-radius: 20px;
-
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  
-  margin-top: 1%;
-  margin-bottom: 5%
-}
-a{  
-  text-decoration: none;
-  color: black;
+.my-socials {
+    display: flex;
+    flex-direction: column; /* Stack rows vertically */
+    align-items: center; /* Center the content */
+    margin-top: 1%;
+    margin-bottom: 5%;
 }
 
-.my-github, 
-.my-facebook,
-.my-instagram,
-.my-pinterest,
-.my-cardd {
-  margin-left: 10px;
-  margin-right: 10px;
-  margin: 0;
-  transition-duration: 0.4s;
-  cursor: pointer;  
+.social-row {
+    display: flex;
+    justify-content: center; /* Center the icons in each row */
+    gap: 15px; /* Adjusted space between icons */
+    margin-bottom: 5px; /* Space between rows */
 }
 
 .my-github img,
-.my-facebook img,  
-.my-instagram img,
-.my-pinterest img,
-.my-cardd img {
-  width: 50px;
-  height: 50px;
-  border-radius: 10px;  
+.facebookBtn img,
+.InstagramBtn img,
+.Pinterest img,
+.carddBtn img {
+    width: 40px; /* Adjusted size */
+    height: 40px; /* Adjusted size */
+    border-radius: 10px;
 }
 
 .my-github img:hover,
-.my-facebook img:hover,
-.my-instagram img:hover,
-.my-pinterest img:hover,  
-.my-cardd img:hover {
-  transform: scale(1.5);
+.facebookBtn img:hover,
+.InstagramBtn img:hover,
+.Pinterest img:hover,
+.carddBtn img:hover {
+    transform: scale(1.5);
 }
-/*-----------------------------------------------------------------------*/
+
+/* Media query for mobile responsiveness */
+@media (max-width: 400px) {
+    .my-socials {
+        flex-direction: column; /* Stack rows vertically */
+    }
+    .social-row {
+        justify-content: center; /* Center the icons in each row */
+    }
+}
+
+@media (min-width: 400px) {
+    .my-socials {
+        flex-direction: row; /* Keep this as row to maintain horizontal alignment */
+        justify-content: center; /* Center the icons */
+        flex-wrap: wrap; /* Allow wrapping if necessary */
+    }
+}
 
 @media (max-width: 960px) {
-  img{
+  img {
     height: 250px;
     width: 225px;
     border-radius: 10%;
   }
-  p{
+  p {
     font-size: 15.5px;
   }
-  h1{
+  h1 {
     font-size: large;
   }
-  .my-projects,.my-description,.projects-container,.summary-container, .warpper{
+  .my-projects,
+  .my-description,
+  .projects-container,
+  .summary-container,
+  .warpper {
     width: 90%;
     margin-left: 15px;
     margin-right: -5px;
     justify-content: center;
   }
-  .projects-container{
+  .projects-container {
     border-color: rgb(235, 131, 162);
     border-style: solid;
   }
-  #summaryContainer{
+  #summaryContainer {
     width: 95%;
   }
-  .tabs{
+  .tabs {
     margin: 0 auto;
     width: 96%;
     text-align: center;
   }
-  .panels{
+  .panels {
     width: 70%;
   }
-  .my-socials{
+  .my-socials {
     margin: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Keep this as row to maintain horizontal alignment */
+    justify-content: center; /* Center the icons */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
   }
   #contactBtn {
     height: 34px;
@@ -660,22 +660,22 @@ a{
     transition-duration: 0.4s;
     cursor: pointer;
   }
-  #toggleButton{
+  #toggleButton {
     height: 34px;
     width: 45%;
-  
+
     border-radius: 8px;
     border-color: azure;
     background-color: rgb(235, 131, 162);
     color: rgb(118, 49, 70);
-  
+
     transition-duration: 0.4s;
     cursor: pointer;
   }
-  #toggleButton:hover{
+  #toggleButton:hover {
     height: 34px;
     width: 85%;
-  
+
     border-radius: 8px;
     border-color: rgb(193, 98, 127);;
     background-color: rgb(235, 131, 162);
@@ -704,5 +704,17 @@ a{
     margin-left: 5.5%;
     margin-right: 5.5%;
   }
-
 }
+
+/* Media query to hide the text at 475px and below */
+@media (max-width: 475px) {
+    .my-socials > span {
+        display: none; /* Hide the text */
+    }
+}
+
+.InstagramBtn {
+    margin-right: 15px; /* Add space to the right of the Instagram icon */
+}
+
+
